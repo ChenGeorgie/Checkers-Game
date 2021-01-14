@@ -1,5 +1,5 @@
-const ROW = 10;
-const COL = 10;
+const ROW = 8;
+const COL = 8;
 const PLAYER1 = '⛀';
 const PLAYER2 = '⛂';
 const PLAYER1DRAGROM = '⛁';
@@ -263,27 +263,12 @@ function placeThePlayerOnBoard(board) {
     for (var i = 0; i < board.length; i++) {
         for (var j = 0; j < board[0].length; j++) {
 
-            // console.log('j:', j, j % 2 !== 0);
-
-            if (j % 2 !== 0) {
-                // show on top. 
-                board[0][j] = PLAYER1;
-                board[2][j] = PLAYER1;
-
-                //show on bottom
-                board[board.length - 2][j] = PLAYER2;
-                board[board.length - 4][j] = PLAYER2;
-            } else {
-                // show on top. 
-                board[1][j] = PLAYER1;
-                board[3][j] = PLAYER1;
-                // board[2][j] = PLAYER1;
-
-                // //show on bottom
-                board[board.length - 1][j] = PLAYER2;
-                board[board.length - 3][j] = PLAYER2;
-
-            }
+            // show on top. 
+            board[0][j] = PLAYER1;
+            board[1][j] = PLAYER1;
+            //show on bottom
+            board[board.length - 1][j] = PLAYER2;
+            board[board.length - 2][j] = PLAYER2;
 
             // count how many soldier have each player.
             if (board[i][j] === PLAYER1) {

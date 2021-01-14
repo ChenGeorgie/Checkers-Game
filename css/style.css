@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
     justify-items: center;
-    width: 30%;
+    width: 40%;
     margin: 40px auto;
     padding: 1.2%;
     border: 1px black solid;
@@ -50,13 +50,13 @@ td {
 }
 
 .mark-brown {
-    /* background: #e48323; */
-    background: white;
+    background: #D2B48C;
+    /* background: white; */
 }
 
 .mark-brown-light {
-    /* background: #D2B48C; */
-    background: rgb(226, 78, 78);
+    background: #e48323;
+    /* background: rgb(226, 78, 78); */
 }
 
 .mark-click {
