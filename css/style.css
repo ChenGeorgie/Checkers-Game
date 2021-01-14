@@ -7,37 +7,22 @@ body {
     margin: 0;
     background: grey;
     user-select: none;
-
+    width: 100%;
 }
-
-.container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* width: 100%; */
-    height: 500px;
-}
-
-
 
 .who-turn {
-    background: linear-gradient(to bottom right,rgb(255, 59, 59), rgb(218, 218, 76), green);
+    background: linear-gradient(to bottom right, rgb(255, 59, 59), rgb(218, 218, 76), green);
     font-size: xx-large;
     font-weight: bold;
     display: flex;
     justify-content: center;
     justify-items: center;
-    width: 50%;
-    margin: 25px auto;
+    width: 30%;
+    margin: 40px auto;
+    padding: 1.2%;
     border: 1px black solid;
     border-radius: 15px;
-    
     box-shadow: -7px 17px 29px -3px #7fb695;
-
-
-
-    
-    
 }
 
 table {
@@ -45,42 +30,103 @@ table {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin-top: 30px;
-
 }
+
 tr {
     display: flex;
     text-align: center;
-    
 }
 
 td {
-    width: 50px;
-    height: 50px;
-    border-radius: 3%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
     line-height: 50px;
     font-weight: bold;
     font-size: 22px;
-
 }
 
-.mark {
-    font-size: 40px;
-}
 .mark-brown {
-    background: #CD853F;
+    /* background: #e48323; */
+    background: white;
 }
 
 .mark-brown-light {
-    background:	#D2B48C;
+    /* background: #D2B48C; */
+    background: rgb(226, 78, 78);
+}
+
+.mark-click {
+    border: 2px solid red;
 }
 
 .options {
     background: yellow;
     color: red;
 }
-.test {
-    background: green;
-    color: brown;
-    font-size: 50px;
+
+.player-eats {
+    background: #66CE21;
+    border: 2px outset rgba(28, 110, 164, 0.6);
+    border-radius: 0px 40px 0px 40px;
+    background: -moz-linear-gradient(-45deg, #66CE21 0%, #1C6EA4 50%, #C59237 100%);
+    background: -webkit-linear-gradient(-45deg, #66CE21 0%, #1C6EA4 50%, #C59237 100%);
+    background: linear-gradient(135deg, #66CE21 0%, #1C6EA4 50%, #C59237 100%);
+    font-size: xx-large;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    font-weight: bold;
+}
+
+.player-eats .player-eats-count {
+    color: red;
+}
+
+.game-over-modal {
+    height: 300px;
+    background: red;
+}
+
+.game-over {
+    background: rgb(145, 145, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    font-size: 26px;
+    font-weight: bold;
+    opacity: 0.9;
+    display: none;
+}
+
+.game-over .who-win {
+    /* background: rgb(127, 127, 206); */
+    /* position: relative; */
+    top: 30%;
+    margin: auto;
+    font-weight: bold;
+}
+
+.game-over .restart-game {
+    background: rgb(88, 163, 157);
+    font: 50px;
+    height: 50px;
+    width: 100px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
 }
