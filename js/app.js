@@ -266,21 +266,20 @@ function placeThePlayerOnBoard(board) {
 
             if (j % 2 !== 0) {
                 // show on top. 
-                // board[0][j] = PLAYER1;
-                // board[2][j] = PLAYER1;
+                board[0][j] = PLAYER1;
+                board[2][j] = PLAYER1;
 
                 //show on bottom
-                // board[board.length - 2][j] = PLAYER2;
+                board[board.length - 2][j] = PLAYER2;
                 board[board.length - 4][j] = PLAYER2;
             } else {
                 // show on top. 
-                // board[1][j] = PLAYER1;
+                board[1][j] = PLAYER1;
                 board[3][j] = PLAYER1;
-                // board[2][j] = PLAYER1;
 
                 // //show on bottom
-                // board[board.length - 1][j] = PLAYER2;
-                // board[board.length - 3][j] = PLAYER2;
+                board[board.length - 1][j] = PLAYER2;
+                board[board.length - 3][j] = PLAYER2;
 
             }
 
